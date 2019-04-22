@@ -32,9 +32,15 @@ public class ClientController {
         return this.reportService.buscarPorNit(nit);
     }
     
-    @GetMapping("/buscarPorNombreApellido")
-    public Client buscarPorNombreApellido(String firstName){       
-        return this.reportService.buscarPorNombreApellido(firstName);
+    @GetMapping("/buscarPorNombre")
+    public Client buscarPorNombre(String firstName){       
+        return this.reportService.buscarPorNombre(firstName);
+    }
+    
+        
+    @GetMapping("/buscarPorApellido")
+    public Client buscarPorApellido(String firstName){       
+        return this.reportService.buscarPorApellido(firstName);
     }
     
     @PostMapping("/crearCliente")

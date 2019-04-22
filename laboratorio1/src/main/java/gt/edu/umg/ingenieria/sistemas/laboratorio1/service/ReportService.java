@@ -24,8 +24,13 @@ public class ReportService {
         return e1;
     }
     
-    public Client buscarPorNombreApellido(String firstName){
+    public Client buscarPorNombre(String firstName){
         Client e1 = (Client) this.clienterepo.findByName(firstName);
+        return e1;
+    }
+    
+      public Client buscarPorApellido(String lastName){
+        Client e1 = (Client) this.clienterepo.findByName(lastName);
         return e1;
     }
     
